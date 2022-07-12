@@ -31,7 +31,28 @@ img {
 blockquote {
     @apply bg-indigo-200 px-4 py-4 rounded-lg text-gray-700;
 }
+
 * {
     font-family: 'tway_air', sans-serif;
     @apply selection:bg-indigo-300 selection:text-white transition-colors;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-3xl
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply text-xl;
+}
+
+h1, h2, h3, h4 {
+    @apply py-2;
 }
