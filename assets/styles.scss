@@ -31,3 +31,7 @@ img {
 blockquote {
     @apply bg-indigo-200 px-4 py-4 rounded-lg text-gray-700;
 }
+* {
+    font-family: 'tway_air', sans-serif;
+    @apply selection:bg-indigo-300 selection:text-white transition-colors;
+}

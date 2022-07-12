@@ -8,12 +8,20 @@ export default defineNuxtConfig({
   buildModules: [
     'nuxt-windicss',
   ],
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/naen-nae/fonts@purge-cache-for-subsets/build/css/tway_air.css'
+      }
+    ]
+  },
   css: [
     '@/assets/styles.scss'
   ],
   content: {
     highlight: {
-      theme: 'solarized-dark',
+      theme: 'github-dark',
     },
   },
 })
