@@ -7,7 +7,7 @@ import Sidebar from '~/components/organisms/Sidebar.vue'
     <!-- Header -->
 
     <!-- Body -->
-    <div class="container !max-w-screen-2xl lg:px-6 mx-auto">
+    <div class="container !max-w-screen-2xl lg:px-6 mx-auto grid-layout">
       <!-- Sidebar -->
       <Sidebar />
 
@@ -15,10 +15,13 @@ import Sidebar from '~/components/organisms/Sidebar.vue'
         <!-- Content -->
         <slot />
       </div>
+
+      <div>
+        Hello World
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-
 </style>
