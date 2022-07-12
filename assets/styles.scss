@@ -1,0 +1,33 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 12px;
+}
+  
+@media (min-width: 1024px) {
+    .grid-layout {
+      grid-template-columns: 250px 1fr 250px;
+    }
+}
+
+
+pre {
+    @apply relative overflow-hidden overflow-x-auto p-5 rounded-lg bg-dark-700 text-transparent;
+}
+
+p {
+    @apply leading-8 text-gray-800;
+
+    code {
+        @apply px-2 py-1 bg-indigo-400 text-white rounded-lg select-all;
+    }
+}
+
+img {
+    @apply w-full;
+}
+
+blockquote {
+    @apply bg-indigo-200 px-4 py-4 rounded-lg text-gray-700;
+}

@@ -8,6 +8,9 @@ export default defineNuxtConfig({
   buildModules: [
     'nuxt-windicss',
   ],
+  css: [
+    '@/assets/styles.scss'
+  ],
   content: {
     highlight: {
       theme: 'solarized-dark',
