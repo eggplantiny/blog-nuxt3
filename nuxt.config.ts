@@ -7,17 +7,10 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['@nuxt/content'],
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
   },
   buildModules: [
     '@pinia/nuxt',
+    'nuxt-windicss',
   ],
   head: {
     link: [
