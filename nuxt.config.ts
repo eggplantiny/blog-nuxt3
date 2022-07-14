@@ -7,17 +7,18 @@ export default defineNuxtConfig({
   ],
   buildModules: [
     'nuxt-windicss',
+    '@pinia/nuxt',
   ],
   head: {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/gh/naen-nae/fonts@purge-cache-for-subsets/build/css/tway_air.css'
-      }
-    ]
+        href: 'https://cdn.jsdelivr.net/gh/naen-nae/fonts@purge-cache-for-subsets/build/css/tway_air.css',
+      },
+    ],
   },
   css: [
-    '@/assets/styles.scss'
+    '@/assets/styles.scss',
   ],
   content: {
     highlight: {
