@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
   ],
+  build: {
+    transpile: ['@nuxt/content'],
+  },
   buildModules: [
     'nuxt-windicss',
     '@pinia/nuxt',
@@ -21,6 +24,7 @@ export default defineNuxtConfig({
     '@/assets/styles.scss',
   ],
   content: {
+    documentDriven: true,
     highlight: {
       theme: 'github-dark',
     },
