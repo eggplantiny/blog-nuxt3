@@ -2,10 +2,10 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 12px;
+    gap: 0 12px;
 }
-  
-@media (min-width: 1024px) {
+
+@media (min-width: 1280px) {
     .grid-layout {
       grid-template-columns: 250px 1fr 250px;
     }
@@ -13,7 +13,7 @@
 
 
 pre {
-    @apply relative overflow-hidden overflow-x-auto p-5 rounded-lg bg-dark-700 text-transparent;
+    @apply relative overflow-hidden overflow-x-auto p-5 rounded-lg bg-gray-700 text-transparent;
 }
 
 p {
