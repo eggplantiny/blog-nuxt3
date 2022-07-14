@@ -4,6 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
+    '@vueuse/nuxt',
   ],
   build: {
     transpile: ['@nuxt/content'],

@@ -12,6 +12,8 @@
     "@antfu/eslint-config": "^0.25.2",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@pinia/nuxt": "^0.3.0",
+    "@vueuse/core": "^8.9.3",
+    "@vueuse/nuxt": "^8.9.3",
     "eslint": "^8.19.0",
     "nuxt": "npm:nuxt3@latest",
     "nuxt-windicss": "^2.4.3",
