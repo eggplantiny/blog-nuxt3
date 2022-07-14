@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Sidebar from '~/components/organisms/Sidebar.vue'
+import TableOfContents from '~/components/organisms/TableOfContents.vue'
 </script>
 
 <template>
@@ -17,7 +18,7 @@ import Sidebar from '~/components/organisms/Sidebar.vue'
       </div>
 
       <div>
-        Hello World
+        <TableOfContents />
       </div>
     </div>
   </div>
