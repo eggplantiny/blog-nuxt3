@@ -4,12 +4,12 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
+    '@nuxtjs/tailwindcss',
   ],
   build: {
     transpile: ['@nuxt/content'],
   },
   buildModules: [
-    'nuxt-windicss',
     '@pinia/nuxt',
   ],
   head: {
