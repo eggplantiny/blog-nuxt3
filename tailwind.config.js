@@ -1,17 +1,19 @@
-const colors = require('tailwindcss/colors')
-
+// tailwind.config.js
 module.exports = {
-  darkMode: 'class',
-  plugins: [
-    require('@tailwindcss/typography'),
+  content: [
+    './assets/styles.scss',
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
-  content: ['content/**/*.{md,yml,json,json5,csv}'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      colors: {
-        // Customize the feeling of your site
-        gray: colors.stone,
-      },
-    },
+    extend: {},
   },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }
