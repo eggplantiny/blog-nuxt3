@@ -1,26 +1,15 @@
 import { defineStore } from 'pinia'
-import { shallowRef } from '@vue/reactivity'
-
-export interface ToC {
-  id: string
-  depth: number
-  text: string
-}
+import { ref } from '#imports'
 
 export const useToCStore = defineStore('ToC', () => {
-  const tocRef = shallowRef<ToC[]>([])
+  const currentActiveToC = ref<string>()
 
-  function updateToC(tocList: ToC[]) {
-    tocRef.value = tocList
-  }
-
-  function getToC() {
-    return tocRef.value
+  function setActiveToC(id: string) {
+    currentActiveToC.value = id
   }
 
   return {
-    tocRef,
-    getToC,
-    updateToC,
+    currentActiveToC,
+    setActiveToC,
   }
 })

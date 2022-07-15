@@ -1,7 +1,11 @@
 <script lang="ts" setup>
-import { onMounted, ref, useContent } from '#imports'
+import { storeToRefs } from 'pinia'
+import { useToCStore } from '~/stores/ToC'
+import { useContent } from '#imports'
 
+const tocStore = useToCStore()
 const { toc } = useContent()
+const { currentActiveToC } = storeToRefs(tocStore)
 </script>
 
 <template>
@@ -13,7 +17,8 @@ const { toc } = useContent()
       <li v-for="link in toc.links" :key="link.text" class="group min-w-0">
         <a
           :href="`#${link.id}`"
-          class="block truncate py-1 text-sm lg:pr-3 text-primary-500 pl-4"
+          class="block truncate py-1 text-sm lg:pr-3 pl-4"
+          :class="[currentActiveToC === link.id ? 'text-indigo-700 font-bold' : 'text-primary-300']"
         >
           {{ link.text }}
         </a>
