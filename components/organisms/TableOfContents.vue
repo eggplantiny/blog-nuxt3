@@ -9,12 +9,16 @@ const { currentActiveToC } = storeToRefs(tocStore)
 </script>
 
 <template>
-  <div class="py-8 lg:py-12 top-8 left-0 sticky">
+  <aside class="py-8 lg:py-12 top-8 left-0 sticky">
     <div class="text-xl font-bold">
       table of contents
     </div>
     <ul v-if="toc && toc.links">
-      <li v-for="link in toc.links" :key="link.text" class="group min-w-0">
+      <li
+        v-for="link in toc.links"
+        :key="link.text"
+        class="ml-2 border-l border-indigo-300 hover:text-indigo-700"
+      >
         <a
           :href="`#${link.id}`"
           class="block truncate py-1 text-sm lg:pr-3 pl-4"
@@ -24,5 +28,5 @@ const { currentActiveToC } = storeToRefs(tocStore)
         </a>
       </li>
     </ul>
-  </div>
+  </aside>
 </template>
