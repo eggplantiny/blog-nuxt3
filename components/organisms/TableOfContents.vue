@@ -14,19 +14,21 @@ const { currentActiveToC } = storeToRefs(tocStore)
       table of contents
     </div>
     <ul v-if="toc && toc.links">
-      <li
-        v-for="link in toc.links"
-        :key="link.text"
-        class="ml-2 border-l border-indigo-300 hover:text-indigo-700"
-      >
-        <a
-          :href="`#${link.id}`"
-          class="block truncate py-1 text-sm lg:pr-3 pl-4"
-          :class="[currentActiveToC === link.id ? 'text-indigo-700 font-bold' : 'text-primary-300']"
+      <div class="py-2">
+        <li
+          v-for="link in toc.links"
+          :key="link.text"
+          class="ml-2 border-l border-indigo-300 hover:text-indigo-700"
         >
-          {{ link.text }}
-        </a>
-      </li>
+          <a
+            :href="`#${link.id}`"
+            class="block truncate py-1 text-sm lg:pr-3 pl-4"
+            :class="[currentActiveToC === link.id ? 'text-indigo-700 font-bold' : 'text-gray-500']"
+          >
+            {{ link.text }}
+          </a>
+        </li>
+      </div>
     </ul>
   </aside>
 </template>

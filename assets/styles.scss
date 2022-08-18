@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
 .grid-layout {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,7 +22,11 @@ p {
     @apply leading-8 text-gray-800;
 
     code {
-        @apply px-2 py-1 bg-indigo-400 text-white rounded-lg select-all;
+        @apply px-1.5 py-1 bg-indigo-400 text-white rounded select-all;
+    }
+
+    a {
+        @apply text-indigo-700 font-bold hover:text-indigo-500;
     }
 }
 
@@ -33,7 +39,7 @@ blockquote {
 }
 
 * {
-    font-family: 'tway_air', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     @apply selection:bg-indigo-300 selection:text-white transition-colors;
 }
 
@@ -56,3 +62,4 @@ h4 {
 h1, h2, h3, h4 {
     @apply py-2;
 }
+
